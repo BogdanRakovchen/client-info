@@ -136,7 +136,7 @@ public class UserTest {
      */
     @Test
     public void checkGetFetch() throws Exception {
-        mockMvc.perform(get("/user/v1/read").accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get("/api/v1/users").accept(MediaType.APPLICATION_JSON))
                 .andExpectAll(status().isOk(), content().contentType(MediaType.APPLICATION_JSON));
 
     }
