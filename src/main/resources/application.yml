@@ -1,0 +1,24 @@
+resilience4j.retry:
+  instances:
+    users:
+      maxAttempts: 3
+      waitDuration: 1s
+      retryExceptions:
+        - org.springframework.web.client.HttpServerErrorException
+        - java.lang.Exception
+        - org.springframework.web.server.ServerErrorException
+
+resilience4j.bulkhead:
+  instances:
+    users:
+      maxConcurrentCalls: 20
+      maxWaitDuration: 100ms
+
+resilience4j.ratelimiter:
+  instances:
+    users:
+      limitForPeriod: 10
+      limitRefreshPeriod: 1000ms
+      timeoutDuration: 3s
+      registerHealthIndicator: true
+      eventConsumerBufferSize: 100

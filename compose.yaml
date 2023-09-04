@@ -9,7 +9,7 @@ services:
     ports:
       - '5432:5432'
     environment:
-      - POSTGRES_PASSWORD=12345
+      - POSTGRES_PASSWORD=password
       - POSTGRES_USER=bogdan
       - POSTGRES_DB=clients
 
