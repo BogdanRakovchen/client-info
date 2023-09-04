@@ -17,9 +17,4 @@ public class NoSuchElementFoundException extends RuntimeException {
 
     private String message;
 
-    // public NoSuchElementFoundException(String message) {
-    // super();
-    // this.message = message;
-    // }
-
 }

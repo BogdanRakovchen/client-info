@@ -4,5 +4,5 @@ import ru.client.clientinfo.entity.ContactsEntity;
 
 public interface IContacts {
 
-    void addContact(ContactsEntity contactsEntity, String id);
+    void addContacts(ContactsEntity contactsEntity, String id);
 }
