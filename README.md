@@ -1,4 +1,4 @@
-# client-info
+# API user contacts
 Процесс запуска приложения:
 1. клониурете проект себе локально <b> git clone https://github.com/BogdanRakovchen/client-info.git </b>
 2. открываете проект в IDE или вводите команду <b>mvn spring-boot:run</b> в терминале и запускаете приложение
